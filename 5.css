@@ -2,4 +2,6 @@ h3,h4,h5 {
     font-size: 30pt;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
+    /* 1pt= 1/72 inch around 0.35 mm
+    16pt = 12 px*/
 }
