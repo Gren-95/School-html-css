@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabel</title>
+    </head>
+
+    <style>
+    h1{
+        font-weight: 700;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    table, th, td{
+        
+        background-color: #EAE6E5;
+        border: #8F8073 3px solid;
+        border-collapse: collapse;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+    }
+    th{
+        font-weight: 800;
+    }
+    div{
+        margin: 5%;
+        padding-left: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #5B9279;
+        border-radius: 25px;
+        border: #EAE6E5 5px solid;
+    }
+    #active{
+        background-color: #8FCB9B;
+    }
+    #active:hover{
+        scale: 120%;
+        transition: 0.5s;
+        border-radius: 20px;
+        padding-left: 20px;
+
+    }
+    div:hover{
+        border-color: blue;
+        scale: 110%;
+        transition: 1s;
+    }
+
+    body{
+        background-color: #12130F;
+    }
+    table{width: 95%;}
+</style>
+    <div>
+        <body>
+            <table>
+                <h1>HTML Tabel</h1>
+
+                <tr> <!-- Table row -->
+                    <th>Jrk nr</th> <!-- Table Heading-->
+                    <th>Nimi</th>
+                    <th>icon</th>
+                </tr>
+
+                <tr>
+                    <td>1.</td> <!-- table data -->
+                    <td>Preiko</td>
+                    <td>&#128053;</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td id="active">Efe</td>
+                    <td>&#128077;</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"> Veel </td> <!-- connect 2 colums -->
+                </tr>
+
+                <tr>
+                    <td>3.</td>
+                    <td>Remo</td>
+                    <td>&#128053;</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Martin</td>
+                    <td>&#128053;</td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+            <iframe width="95%" height="500px"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe> 
+        </div>
+    </body>
+</html>
