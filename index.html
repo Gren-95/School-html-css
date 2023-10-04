@@ -1,69 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sisukord</title>
-    </head>
-    <body background="index src/library.bmp">
-        <div>
-            <h1>Sisukord &#128209;</h1>
-            <p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sisukord</title>
+  </head>
+  <body background="index src/library.bmp">
+    <div class="tbody">
+      <h1>Sisukord <span class="rotating-emoji">&#128209;</span></h1>
+      <ol>
+        <li><a href="./1/1.html">Esimene leht</a><br /></li>
+        <li><a href="./2/2.html">Link õppematerjalidele</a><br /></li>
+        <li><a href="./3/3.html">Lisa Pilt ja head lingid</a><br /></li>
+        <li><a href="./4/4.html">Nimekirjad</a><br /></li>
+        <li><a href="./5/5.html">Vormindamine</a><br /></li>
+        <li><a href="./6/6.html">Värvilised vormid + Css</a><br /></li>
+        <li><a href="./7/7.html">Tarkvara arendustsükkel</a><br /></li>
+        <li><a href="./8/tabel.html">Tabelid</a><br /></li>
+        <li><a href="./9/9.html">Arendaja ostukorv</a><br /></li>
+        <li><a href="./10/10.html">Raamid</a><br /></li>
+        <li><a href="./11/11.html">Klassid</a><br /></li>
+        <li><a href="./12/12.html">Uudised</a><br /></li>
+        <li><a href="./13/13.html">Pildi CSS</a><br /></li>
+        <li><a href="./14/14.html">Nalijad</a><br /></li>
+        <li><a href="./15/15.html">Pilt tabeli kõrval</a><br /></li>
+        <li><a href="./16/form.html">Vorm</a><br /></li>
+        <li><a href="./17/17.html">JavaScript</a><br /></li>
+      </ol>
+    </div>
+  </body>
 
-                <ol>
-                    <li><a href="./1/1.html">Esimene leht</a><br></li>
-                    <li><a href="./2/2.html">Link õppematerjalidele</a><br></li>
-                    <li><a href="./3/3.html">Lisa Pilt ja head lingid</a><br></li>
-                    <li><a href="./4/4.html">Nimekirjad</a><br></li>
-                    <li><a href="./5/5.html">Vormindamine</a><br></li>
-                    <li><a href="./6/6.html">Värvilised vormid + Css</a><br></li>
-                    <li><a href="./7/7.html">Tarkvara arendustsükkel</a><br></li>
-                    <li><a href="./8/tabel.html">Tabelid</a><br></li>
-                    <li><a href="./9/9.html">Arendaja ostukorv</a><br></li>
-                    <li><a href="./10/10.html">Raamid</a><br></li>
-                    <li><a href="./11/11.html">Klassid</a><br></li>
-                    <li><a href="./12/12.html">Uudised</a><br></li>
-                </ol>
-            </div>
-        </p>
-
-    </body>
-
-    <style>
-    a, li{
-        color: chocolate;
-        font-weight: 600;
+  <style>
+    .link-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    h1{
-        color: chocolate;
-        font-weight: 600;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .rotating-emoji {
+      animation: rotate 2s linear infinite;
+      display: inline-block;
+      font-size: 20pt;
     }
-a,p,h1, li{
-    padding: 2px;
-    margin-left: 20px;
-}
-div{
-    background-color: antiquewhite;
-    border-radius: 25px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: green 5px solid;
-}
-a:hover{
-    color: white;
-font-size: larger;
-transition: 0.2s;
-background-color: black;
-border-radius: 25px;
-margin: 5%;
-padding-left: 50px;
-padding-right: 50px;
-}
-a:link{
-    text-decoration: none;
-}
-</style>
 
+    .gif {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    a,
+    li {
+      color: chocolate;
+      font-weight: 600;
+    }
+
+    h1 {
+      color: chocolate;
+      font-weight: 600;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    a,
+    p,
+    h1,
+    li {
+      padding: 2px;
+      margin-left: 20px;
+    }
+    .tbody {
+      background-color: antiquewhite;
+      border-radius: 25px;
+      margin-left: 5%;
+      margin-right: 5%;
+      border: green 5px solid;
+    }
+    a:hover {
+      color: white;
+      font-size: larger;
+      transition: 0.2s;
+      background-color: black;
+      border-radius: 25px;
+      margin: 5%;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    a:link {
+      text-decoration: none;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .rotating-emoji {
+      display: inline-block;
+      animation: rotate 2s linear infinite;
+    }
+  </style>
 </html>
