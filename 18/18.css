@@ -1,0 +1,47 @@
+body {
+  background-color: beige;
+  background-image: url(../index\ src/book-spinning.gif);
+  /* background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    background-position: top right;*/
+  background-size: 50vw;
+}
+
+h1 {
+  background-color: gray;
+  color: white;
+  padding: 2vw;
+  border-radius: 0.5vw;
+  margin: 0;
+  font-size: 3vw;
+}
+
+h2 {
+  background-color: beige;
+  padding: 2vw;
+  border-radius: 0.5vw;
+  opacity: 90%;
+  line-height: 2vw;
+  font-size: 2vw;
+
+}
+
+div {
+  border: 1vw dashed blue;
+  border-radius: 0.5vw;
+  background-color: powderblue;
+  opacity: 80%;
+}
+
+ul, li{
+    background-color: aliceblue;
+    border-radius: 0.5vw;
+    padding: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    font-size: 1.8vw;
+    list-style-type: square;
+    list-style-type: "";
+
+}
