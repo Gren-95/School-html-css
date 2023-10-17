@@ -3,95 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sisukord</title>
+    <title>Library Catalog</title>
   </head>
-  <body background="index src/library.bmp">
-    <div class="tbody">
-      <h1>Sisukord <span class="rotating-emoji">&#128209;</span></h1>
-      <ol>
-        <li><a href="./1/1.html">Esimene leht</a><br /></li>
-        <li><a href="./2/2.html">Link õppematerjalidele</a><br /></li>
-        <li><a href="./3/3.html">Lisa Pilt ja head lingid</a><br /></li>
-        <li><a href="./4/4.html">Nimekirjad</a><br /></li>
-        <li><a href="./5/5.html">Vormindamine</a><br /></li>
-        <li><a href="./6/6.html">Värvilised vormid + Css</a><br /></li>
-        <li><a href="./7/7.html">Tarkvara arendustsükkel</a><br /></li>
-        <li><a href="./8/tabel.html">Tabelid</a><br /></li>
-        <li><a href="./9/9.html">Arendaja ostukorv</a><br /></li>
-        <li><a href="./10/10.html">Raamid</a><br /></li>
-        <li><a href="./11/11.html">Klassid</a><br /></li>
-        <li><a href="./12/12.html">Uudised</a><br /></li>
-        <li><a href="./13/13.html">Pildi CSS</a><br /></li>
-        <li><a href="./14/14.html">Nalijad</a><br /></li>
-        <li><a href="./15/15.html">Pilt tabeli kõrval</a><br /></li>
-        <li><a href="./16/form.html">Vorm</a><br /></li>
-        <li><a href="./17/17.html">JavaScript</a><br /></li>
-        <li><a href="./18/18.html">Background</a><br /></li>
-        <li><a href="./19/19.html">Overflow</a><br /></li>
-        <li><a href="./20/20.html">JS variables</a><br /></li>
-        <li><a href="./21/21.html">using JS variables</a><br /></li>
-        <li><a href="./22/22.html">HTML form wirh JS</a><br /></li>
-      </ol>
+  <body>
+    <div class="library">
+      <h1>Table of contents <span class="rotating-emoji">&#128209;</span></h1>
+      <div class="lub">
+        <ol>
+          <li><a href="./1/1.html">First Page</a></li>
+          <li><a href="./2/2.html">Learning Materials</a></li>
+          <li><a href="./3/3.html">Add Pictures and Useful Links</a></li>
+          <li><a href="./4/4.html">Lists</a></li>
+          <li><a href="./5/5.html">Formatting</a></li>
+          <li><a href="./6/6.html">Colorful Forms + CSS</a></li>
+          <li><a href="./7/7.html">Software Development Cycle</a></li>
+          <li><a href="./8/8.html">Tables</a></li>
+          <li><a href="./9/9.html">Developer's Shopping Cart</a></li>
+          <li><a href="./10/10.html">Frames</a></li>
+          <li><a href="./11/11.html">Classes</a></li>
+          <li><a href="./12/12.html">News</a></li>
+          <li><a href="./13/13.html">Image CSS</a></li>
+          <li><a href="./14/14.html">Jokes</a></li>
+          <li><a href="./15/15.html">Image Next to Table</a></li>
+        </ol>
+        <ol>
+          <li><a href="./16/16.html">Form</a></li>
+          <li><a href="./17/17.html">JavaScript</a></li>
+          <li><a href="./18/18.html">Background</a></li>
+          <li><a href="./19/19.html">Overflow</a></li>
+          <li><a href="./20/20.html">JS Variables</a></li>
+          <li><a href="./21/21.html">Using JS Variables</a></li>
+          <li><a href="./22/22.html">HTML Form with JS</a></li>
+          <li><a href="./23/23.html">Navbar</a></li>
+          <li><a href="./24/24.html">IF usage in JS</a></li>
+          <li><a href="./25/25.html">Comparing numbers in JS</a></li>
+          <li><a href="./26/26.html">Leapyear JS</a></li>
+          <li><a href="./27/27.html">Mathematical logic</a></li>
+          <li><a href="./28/28.html">if JS</a></li>
+          <li><a href="./29/29.html">compairing 3 numbers JS</a></li>
+        </ol>
+      </div>
     </div>
   </body>
 
   <style>
-    .link-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    body {
+      background-color: #f7f7f7;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      background-image: url(./index\ src/library.bmp);
+    }
+
+    .library {
+      background-color: #f0f0f0; /* Slightly darker gray */
+      border-radius: 10px;
+      margin: 5% auto;
+      max-width: 800px;
+      padding: 20px;
+      border: 2px solid #008000;
+    }
+
+    h1 {
+      color: #008000;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    ol {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      color: #d2691e;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.4s, background-color 0.4s;
+      padding: 5px;
+      border-radius: 25px;
+    }
+
+    a:hover {
+      color: #fff;
+      background-color: #000;
     }
 
     .rotating-emoji {
       animation: rotate 2s linear infinite;
       display: inline-block;
       font-size: 20pt;
-    }
-
-    .gif {
-      text-align: center;
-      margin-top: 20px;
-      padding: 20px;
-    }
-
-    a,
-    li {
-      color: chocolate;
-      font-weight: 600;
-    }
-
-    h1 {
-      color: chocolate;
-      font-weight: 600;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    }
-    a,
-    p,
-    h1,
-    li {
-      padding: 2px;
-      margin-left: 20px;
-    }
-    .tbody {
-      background-color: antiquewhite;
-      border-radius: 25px;
-      margin-left: 5%;
-      margin-right: 5%;
-      border: green 5px solid;
-    }
-    a:hover {
-      color: white;
-      font-size: larger;
-      transition: 0.4s;
-      background-color: black;
-      border-radius: 25px;
-      margin: 2px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    a:link {
-      text-decoration: none;
     }
 
     @keyframes rotate {
@@ -103,9 +107,41 @@
       }
     }
 
-    .rotating-emoji {
-      display: inline-block;
-      animation: rotate 2s linear infinite;
+    .lub {
+      display: flex;
+    }
+    ol {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 20px;
+      border: 2px solid green;
+      box-shadow: 6px 6px 6px;
+      margin: 10px;
+      width: 40%;
+      color: green;
+    }
+    h1 {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 20px;
+      border: 2px solid green;
+      box-shadow: 6px 6px 6px;
+    }
+
+    @media (max-width: 600px) {
+      .lub {
+        flex-direction: column;
+      }
+      ol {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid green;
+        box-shadow: 6px 6px 6px;
+        margin: 10px;
+        width: 85%;
+        color: green;
+      }
     }
   </style>
 </html>
