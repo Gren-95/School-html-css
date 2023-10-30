@@ -42,6 +42,7 @@
           <li><a href="./28/28.html">if JS</a></li>
           <li><a href="./29/29.html">compairing 3 numbers JS</a></li>
           <li><a href="./30/30.html">BMI Calculating</a></li>
+          <li><a href="./31/31.html">JS calculating</a></li>
         </ol>
       </div>
     </div>
@@ -53,16 +54,39 @@
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       background-image: url(./index\ src/library.bmp);
+      animation: moveBackground 30s linear infinite;
     }
 
-    .library {
-      background-color: #f0f0f0; /* Slightly darker gray */
-      border-radius: 10px;
-      margin: 5% auto;
-      max-width: 800px;
-      padding: 20px;
-      border: 2px solid #008000;
+    @keyframes moveBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
     }
+
+    @keyframes woodgrain {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.library {
+  background-color: #f0f0f0; /* Slightly darker gray */
+  border-radius: 10px;
+  margin: 5% auto;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid #008000;
+  background-image: linear-gradient(45deg, rgba(139,69,19,0.15) 25%, transparent 25%, transparent 75%, rgba(139,69,19,0.15) 75%, rgba(139,69,19,0.15) 100%);
+  background-size: 50px 50px;
+  animation: woodgrain 30s linear infinite;
+}
+
 
     h1 {
       color: #008000;
