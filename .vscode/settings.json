@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/3.html"
+    "livePreview.defaultPreviewPath": "/3.html",
+    "liveServer.settings.port": 5501
 }

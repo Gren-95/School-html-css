@@ -6,6 +6,14 @@
     <title>Library Catalog</title>
   </head>
   <body>
+    <div class="links">
+      <br />
+      <a id="nevbar1" href="http://bit.ly/ametikoolRakvere">Õppematerjal</a>
+      <a id="nevbar2" href="https://disyou.moodlecloud.com/login/index.php"
+        >Moodle</a
+      >
+      <a id="nevbar3" href="https://www.w3schools.com/">W3Schools</a>
+    </div>
     <div class="library">
       <h1>Table of contents <span class="rotating-emoji">&#128209;</span></h1>
       <div class="lub">
@@ -25,13 +33,13 @@
           <li><a href="./13/13.html">Image CSS</a></li>
           <li><a href="./14/14.html">Jokes</a></li>
           <li><a href="./15/15.html">Image Next to Table</a></li>
-        </ol>
-        <ol>
           <li><a href="./16/16.html">Form</a></li>
           <li><a href="./17/17.html">JavaScript</a></li>
           <li><a href="./18/18.html">Background</a></li>
           <li><a href="./19/19.html">Overflow</a></li>
           <li><a href="./20/20.html">JS Variables</a></li>
+        </ol>
+        <ol>
           <li><a href="./21/21.html">Using JS Variables</a></li>
           <li><a href="./22/22.html">HTML Form with JS</a></li>
           <li><a href="./23/23.html">Navbar</a></li>
@@ -43,14 +51,45 @@
           <li><a href="./29/29.html">compairing 3 numbers JS</a></li>
           <li><a href="./30/30.html">BMI Calculating</a></li>
           <li><a href="./31/31.html">JS calculating</a></li>
+          <li><a href="./32/32.html">JS math random bingo</a></li>
+          <li><a href="./33/33.html">JS function and loop</a></li>
+          <li><a href="./34/34.html">HTML Library test</a></li>
+          <li><a href="./35/35.html">JS arvu test</a></li>
+          <li><a href="./36/36.html">JS Ristsumma ja ristkorrutis</a></li>
+          <li><a href="./37/37.html">JS teepikkuse mõõtmine</a></li>
+          <li><a href="./38/38.html">JS algorithim</a></li>
         </ol>
       </div>
     </div>
   </body>
 
   <style>
+    .links {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
     body {
-      background-color: #f7f7f7;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    body {
+      background-color: whitesmoke;
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
         "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       background-image: url(./index\ src/library.bmp);
@@ -67,29 +106,38 @@
     }
 
     @keyframes woodgrain {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 0;
-  }
-}
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
 
-.library {
-  background-color: #f0f0f0; /* Slightly darker gray */
-  border-radius: 10px;
-  margin: 5% auto;
-  max-width: 800px;
-  padding: 20px;
-  border: 2px solid #008000;
-  background-image: linear-gradient(45deg, rgba(139,69,19,0.15) 25%, transparent 25%, transparent 75%, rgba(139,69,19,0.15) 75%, rgba(139,69,19,0.15) 100%);
-  background-size: 50px 50px;
-  animation: woodgrain 30s linear infinite;
-}
-
+    .library {
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+      background-color: whitesmoke; /* Slightly darker gray */
+      border-radius: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      /*max-width: 800px;*/
+      padding: 10px;
+      border: 4px solid brown;
+      background-image: linear-gradient(
+        45deg,
+        rgba(139, 69, 19, 0.15) 25%,
+        transparent 25%,
+        transparent 75%,
+        rgba(139, 69, 19, 0.15) 75%,
+        rgba(139, 69, 19, 0.15) 100%
+      );
+      background-size: 350px 350px;
+      animation: woodgrain 40s linear infinite;
+    }
 
     h1 {
-      color: #008000;
+      color: brown;
       font-weight: 600;
       text-align: center;
     }
@@ -104,7 +152,7 @@
     }
 
     a {
-      color: #d2691e;
+      color: darkred;
       font-weight: 600;
       text-decoration: none;
       transition: color 0.4s, background-color 0.4s;
@@ -139,17 +187,17 @@
       background-color: #f0f0f0;
       padding: 20px;
       border-radius: 20px;
-      border: 2px solid green;
+      border: 2px solid brown;
       box-shadow: 6px 6px 6px;
       margin: 10px;
       width: 40%;
-      color: green;
+      color: black;
     }
     h1 {
       background-color: #f0f0f0;
       padding: 20px;
       border-radius: 20px;
-      border: 2px solid green;
+      border: 2px solid brown;
       box-shadow: 6px 6px 6px;
     }
 
@@ -161,11 +209,11 @@
         background-color: #f0f0f0;
         padding: 20px;
         border-radius: 20px;
-        border: 2px solid green;
+        border: 2px solid brown;
         box-shadow: 6px 6px 6px;
         margin: 10px;
         width: 85%;
-        color: green;
+        color: brown;
       }
     }
   </style>
