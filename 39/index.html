@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Kordamine</h1>
+        <h2>HTML elements & JS</h2>
+    </div>
+
+    <div class="content">
+        <img src="./p1yw28nw.bmp">
+        <img src="./qrcebd9f.bmp">
+    </div>
+    <div>
+        <a href="http://www.google.com">Google</a>
+    </div>
+    <div>
+        <ul>
+            <li>Praktika Algus - 13.11.2023</li>
+            <li>Vaheaeg - 20.12.2023 - 05.01.2024</li>
+            <li>Praktika lõpp - 16.02.2024</li>
+            <li>Praktika kaitsmine - tbd</li>
+            <li>Lõputöö kaitsmine - 14.06.2024 kell 10:00</li>
+        </ul>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Praktika Algus</td>
+                <td>13.11.2023</td>
+            </tr>
+            <tr>
+                <td>Vaheaeg</td>
+                <td>20.12.2023 - 05.01.2024</td>
+            </tr>
+            <tr>
+                <td>Praktika lõpp</td>
+                <td>16.02.2024</td>
+            </tr>
+            <tr>
+                <td>Praktika kaitsmine</td>
+                <td>tbd</td>
+            </tr>
+            <tr>
+                <td>Lõputöö kaitsmine</td>
+                <td>14.06.2024 kell 10:00</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <input type="text" id="enimi" placeholder="Eesnimi"><br>
+        <input type="text" id="pnimi" placeholder="Perenimi"><br>
+        <input type="submit" value="Submit" onclick="nameee()">
+        <input type="reset">
+        <div>
+
+        </div id="tulemused">
+    </div>
+</body>
+<script>
+    function nameee() {
+        alert("Data saved!")
+        let enimi = document.getElementById("enimi").value;
+        let pnimi = document.getElementById("pnimi").value;
+        document.getElementById("tulemused").innerHTML = "Sinu eesnimi on " + enimi + " ja perekonnanimi on " + pnimi + ".";
+
+    }
+</script>
+
+<style>
+    input[type=submit] {
+        background: rgb(9, 9, 121);
+        background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(9, 9, 121, 1) 32%, rgba(0, 0, 0, 1) 32%, rgba(0, 0, 0, 1) 68%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 1) 100%);
+        color: #FFFFFF;
+        /* White text */
+        border: 2px solid #000000;
+        /* Black border */
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        background-size: 100% 300%;
+    }
+
+    body {
+        background-color: #f1f0f4;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    div {
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+        filter: drop-shadow(0 0 6px black);
+    }
+
+    img {
+        height: 400px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    table,
+    th,
+    td {
+        border: #000 1px solid;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+
+    table {
+        border-radius: 10px;
+    }
+</style>
+
+</html>
