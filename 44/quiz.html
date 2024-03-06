@@ -45,60 +45,7 @@
         <button onclick="submitQuiz()">Esita vastused</button>
     </div>
 
-    <script>
-        function submitQuiz() {
-            var answers = [];
-            var totalScore = 0;
-
-            // Küsimus 1
-            var question1 = document.querySelector('input[name="question1"]:checked');
-            if (question1) {
-                answers.push(question1.value);
-                if (question1.value === "b") {
-                    totalScore++;
-                }
-            }
-            // Küsimus 2
-            var question2 = document.querySelector('input[name="question2"]:checked');
-            if (question2) {
-                answers.push(question2.value);
-                if (question2.value === "a") {
-                    totalScore++;
-                }
-            }
-
-            // Küsimus 3
-            var question3 = document.querySelector('input[name="question3"]:checked');
-            if (question3) {
-                answers.push(question3.value);
-                if (question3.value === "a") {
-                    totalScore++;
-                }
-            }
-
-            // Küsimus 4
-            var question4 = document.querySelector('input[name="question4"]:checked');
-            if (question4) {
-                answers.push(question4.value);
-                if (question4.value === "b") {
-                    totalScore++;
-                }
-            }
-
-            // Küsimus 5
-            var question5 = document.querySelector('input[name="question5"]:checked');
-            if (question5) {
-                answers.push(question5.value);
-                if (question5.value === "a") {
-                    totalScore++;
-                }
-            }
-
-            // Kuva tulemus
-            var result = "Tulemus: Saavutasid " + totalScore + " punkti 5-st.";
-            document.getElementById("result").innerHTML = result;
-        }
-    </script>
+    <script src="script.js"></script>
 
     <!-- Tulemuse kuvamine -->
     <div id="result"></div>

@@ -1,0 +1,36 @@
+img {
+  width: 300px;
+}
+
+.news_row_2 {
+  float: left;
+  background-color: black;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 25px;
+  padding: 12px;
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align: center;
+  margin-top: 20px;
+  transition: 1s;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  font-size: 14pt;
+}
+
+.container {
+  margin: 0;
+}
+
+p {
+  text-align: left;
+}
+
+body {
+  background-color: darksalmon;
+}

@@ -17,51 +17,7 @@
     <!-- Nupp funktsiooni käivitamiseks -->
     <button onclick="checkNumber()">Kontrolli arvu</button>
     <button onclick="checkTenNumbers()">Kontrolli 10 arvu</button>
-
-    <script>
-        function checkNumber() {
-            var number = parseInt(prompt("Sisesta arv:"));
-
-            if (!isNaN(number)) {
-                var message = '';
-
-                if (number >= 1 && number <= 100 && number % 7 === 0) {
-                    message += number + " on vahemikus 1 kuni 100 ja jagub 7-ga.<br>";
-                } else {
-                    message += number + " ei vasta tingimusele 1.<br>";
-                }
-
-                if (number < 100 || number > 200) {
-                    message += number + " on alla 100 või üle 200.<br>";
-                } else {
-                    message += number + " ei vasta tingimusele 2.<br>";
-                }
-
-                document.getElementById('result').innerHTML = message;
-            } else {
-                document.getElementById('result').innerHTML = "Palun sisesta arv!";
-            }
-        }
-
-        function findLargestNumber(numbers) {
-            return Math.max(...numbers.filter(number => !isNaN(number)));
-        }
-
-        function inputNumbers() {
-            var numbers = [];
-            for (var i = 0; i < 10; i++) {
-                var number = parseInt(prompt("Sisesta arv " + (i + 1) + ":"));
-                numbers.push(number);
-            }
-            return numbers;
-        }
-
-        function checkTenNumbers() {
-            var numbers = inputNumbers();
-            var largestNumber = findLargestNumber(numbers);
-            document.getElementById('result').innerHTML = "Suurim arv on: " + largestNumber;
-        }
-    </script>
+    <script src="script.js"></script>
 
     <!-- Result display -->
     <div id="result"></div>

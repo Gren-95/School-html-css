@@ -1,0 +1,24 @@
+.slogan {
+    background-color: black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.slogan:hover {
+    background-color: lightskyblue;
+    color: black;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 25pt;
+}
+
+.container {
+    background-color: blueviolet;
+    padding: 20pt;
+    border-radius: 25pt;
+    min-height: 70%;
+
+}

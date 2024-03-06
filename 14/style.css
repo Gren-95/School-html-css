@@ -1,0 +1,35 @@
+.container {
+  background-color: wheat;
+  padding: 20px;
+  border-radius: 25px;
+  border-style: dashed;
+  border-color: skyblue;
+  border-width: 16px 12px 8px 4px;
+  border-width: 16px 12px 8px;
+  border-width: 16px 12px;
+}
+
+.box {
+  width: 50%;
+  margin: 50px 30px 20px 5px;
+  margin: 0 auto;
+  /* puts top/bottom to 0px left/right middle of page*/
+  background-color: skyblue;
+  border: slateblue 5px solid;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.joke {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box::after {
+  content: " * * *";
+  color: slateblue;
+  font-size: 2em;
+}

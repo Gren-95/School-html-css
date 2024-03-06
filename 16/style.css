@@ -1,0 +1,78 @@
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  span,
+  pre,
+  label {
+    color: #38302e;
+  }
+  h1,
+  h2,
+  button,
+  #nupp {
+    color: #fbf7f4;
+  }
+
+  button,
+  #nupp {
+    background-color: #788585;
+    border-radius: 25px;
+    border: 0px;
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  button:hover {
+    background-color: #9caea9;
+    color: #788585;
+  }
+  #nupp:hover {
+    background-color: #9caea9;
+    color: #788585;
+  }
+
+  form {
+    width: 70%;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #788585;
+    border-radius: 25px;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 10px black; /* Add this line for drop shadow */
+  }
+
+  form {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    border-radius: 25px;
+    background-color: #ccdad1;
+    box-shadow: 10px 10px 10px black; /* Add this line for drop shadow */
+  }
+
+  body {
+    background-color: #9caea9;
+  }
+
+  label,
+  textarea {
+    border-radius: 10pt;
+  }
+
+  label {
+    font-size: 14pt;
+    font-weight: 400;
+  }
+  textarea {
+    resize: none;
+  }
+  pre {
+    font-weight: 600;
+  }

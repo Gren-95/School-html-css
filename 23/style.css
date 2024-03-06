@@ -1,0 +1,66 @@
+
+#dev2-2,
+#dev2-3,
+#dev2-4,
+#dev2-5 {
+  text-align: center;
+  padding: 10px;
+  background-color: green;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+#dev2-1 {
+  color: black;
+  font-size: 14pt;
+}
+#dev2 {
+  color: black;
+  font-size: 60pt;
+}
+
+a:link {
+  text-decoration: none;
+  margin-left: 10px;
+}
+body {
+  margin: 0;
+}
+.navbar {
+  background-color: #282a35;
+  padding: 10px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  color: #fff4a3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ol,
+ul,
+a {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.devider1 {
+  background-color: #282a35;
+  height: 500px;
+}
+.devider2 {
+  background-color: #d9eee1;
+  height: 600px;
+}
+.devider3 {
+  background-color: #fff4a3;
+  height: 600px;
+}

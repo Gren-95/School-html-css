@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,8 +15,8 @@
     </div>
 
     <div class="content">
-        <img src="./p1yw28nw.bmp">
-        <img src="./qrcebd9f.bmp">
+        <img src="./img/8vyqj78a.bmp">
+        <img src="./img/p1yw28nw.bmp">
     </div>
     <div>
         <a href="http://www.google.com">Google</a>
@@ -67,79 +68,6 @@
         </div id="tulemused">
     </div>
 </body>
-<script>
-    function nameee() {
-        alert("Data saved!")
-        let enimi = document.getElementById("enimi").value;
-        let pnimi = document.getElementById("pnimi").value;
-        document.getElementById("tulemused").innerHTML = "Sinu eesnimi on " + enimi + " ja perekonnanimi on " + pnimi + ".";
-
-    }
-</script>
-
-<style>
-    input[type=submit] {
-        background: rgb(9, 9, 121);
-        background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(9, 9, 121, 1) 32%, rgba(0, 0, 0, 1) 32%, rgba(0, 0, 0, 1) 68%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 1) 100%);
-        color: #FFFFFF;
-        /* White text */
-        border: 2px solid #000000;
-        /* Black border */
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 4px;
-        background-size: 100% 300%;
-    }
-
-    body {
-        background-color: #f1f0f4;
-        color: black;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .heading {
-        text-align: center;
-    }
-
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-    div {
-        background-color: #ffffff;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px;
-        filter: drop-shadow(0 0 6px black);
-    }
-
-    img {
-        height: 400px;
-        border-radius: 10px;
-        margin-right: 10px;
-    }
-
-    .content {
-        display: flex;
-    }
-
-    table,
-    th,
-    td {
-        border: #000 1px solid;
-        border-collapse: collapse;
-        padding: 5px;
-    }
-
-    table {
-        border-radius: 10px;
-    }
-</style>
+<script src="script.js"></script>
 
 </html>

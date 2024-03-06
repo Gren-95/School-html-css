@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+  }
+  div {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  input {
+    display: flex;
+  }
+  .container {
+    background-color: antiquewhite;
+    margin: 30%;
+  }
+  img{
+    filter: grayscale(100%) invert(100%);
+  }

@@ -1,0 +1,55 @@
+h1 {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table,
+th,
+td {
+
+    background-color: #EAE6E5;
+    border: #8F8073 3px solid;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+th {
+    font-weight: 800;
+}
+
+div {
+    margin: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #5B9279;
+    border-radius: 25px;
+    border: #EAE6E5 5px solid;
+}
+
+#active {
+    background-color: #8FCB9B;
+}
+
+#active:hover {
+    scale: 120%;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding-left: 20px;
+
+}
+
+div:hover {
+    border-color: blue;
+    scale: 110%;
+    transition: 1s;
+}
+
+body {
+    background-color: #12130F;
+}
+
+table {
+    width: 95%;
+}

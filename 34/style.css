@@ -1,0 +1,94 @@
+.columns {
+    columns: 2;
+    column-gap: 20px;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #222, #000);
+    color: #fff;
+    overflow: hidden;
+  }
+
+  body::after{
+      background-color: red;
+      filter: blur(40px);
+  }
+
+  .links {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .links a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.4s;
+    width: 40%;
+    text-align: center;
+  }
+
+  .links a:hover {
+    color: #fff;
+  }
+
+  .library {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+
+  h1 {
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+
+  a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.4s, background-color 0.4s;
+    padding: 8px 12px;
+    border-radius: 25px;
+    background-color: #555;
+    display: inline-block;
+    width: 90%;
+
+  }
+
+  a:hover {
+    background-color: #777;
+  }
+
+  @media (max-width: 600px) {
+    .columns {
+      flex-direction: column;
+    }
+    ol {
+      width: 85%;
+    }
+  }
