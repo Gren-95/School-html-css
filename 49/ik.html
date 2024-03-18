@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stringid</title>
+    <script>
+        function tegutse(form){
+            let ik=form.ikood.value;
+            let esimeneMark=ik.charAt(0);  //String
+            let inimeseSugu;  
+            if(esimeneMark%2==0){  //Stringi jagan 2, tegelikult lubamatu tehe
+                inimeseSugu="naine";
+            }else{
+                inimeseSugu="mees";
+            }
+            //inimeseSugu=(esimeneMark%2==0)?"naine":"mees";
+            document.getElementById("sugu").innerHTML=inimeseSugu;
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Stringide kasutamine</h1>
+    <h2>Trikid isikukoodiga</h2>
+
+    <form>
+        <label>Sisesta isikukood</label>
+        <input type="text" name="ikood"><br><br>
+        <input type="button" value="Sisesta" onclick="tegutse(this.form)"><br><br>
+    </form>
+    <p id="sugu"></p>
+    <p id="sajand"></p>
+    <!--
+   
+</body>
+</html>

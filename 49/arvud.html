@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arvud</title>
+    <script>
+        /* Kasutaja sisestab 2 arvu, kontrolli, 
+        1. Kas arvud on ühepikkused, mõlemas arvus on märke sama palju?
+        2. Kas mõlema arvu puhul on esimene ja viimane numbrimärk samad? 232 ja 56785
+        3. Kas mõlemad arvud on paarisarvud?  */
+
+        function esimeneJaViimane(tekst) {  // tekst - sisend parameeter, formaalne parameeter
+            let tulem = false;
+            if (tekst.slice(0, 1) == tekst.slice(-1)) {
+                tulem = true;
+            }
+            return tulem;  //tagastav väärtus on tõeväärtus
+        }
+
+        function minuFunktsioon(form) { /* Peaprogramm */
+            let arv1 = form.num1.value;
+            let arv2 = form.num2.value;
+            //1. ülesanne
+            let tulemus1;
+            if (arv1.length == arv2.length) {
+                tulemus1 = "ühepikkused";
+            } else {
+                tulemus1 = "erineva pikkusega";
+            }
+            document.getElementById("tulemus1").innerHTML = "Arvud on " + tulemus1 + ".";
+            //2. ülesanne
+            let tulemus2 = "ei ole";
+            if (esimeneJaViimane(arv1) && esimeneJaViimane(arv2)) {
+                tulemus2 = "on";
+            }
+            document.getElementById("tulemus2").innerHTML = "Arvude esimene ja viimane märk "
+                + tulemus2 + " samad.";
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Arvude võrdlemine</h1>
+    <form>
+        <label>Sisesta esimene arv</label>
+        <input type="text" name="num1"><br><!-- Kasutaja sisestab alati teksti-->
+        <label>Sisesta teine arv</label>
+        <input type="text" name="num2"><br>
+        <input type="button" value="Võrdle" onclick="minuFunktsioon(this.form)">
+    </form>
+
+    <p id="tulemus1"></p>
+    <p id="tulemus2"></p>
+    <p id="tulemus3"></p>
+
+</body>
+
+</html>
